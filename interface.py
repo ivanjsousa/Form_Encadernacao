@@ -2,6 +2,11 @@ import PySimpleGUI as Sg
 import frames as fm
 import input_users as iu
 import abas as ab
+import login as lg
+
+# ------ AUTENTICAÇÃO USER\SENHA ------ #
+
+autenticar = [lg.login()]
 
 # ------ BARRA DE MENU ------ #
 
@@ -27,7 +32,8 @@ janela = Sg.Window("Projetos de Encadernação V1.0", layout, enable_close_attem
 
 
 # ------ LAÇO QUE MANTEM A JANELA ATIVA ------ #
-""" Aqui é colocado toda a lógica de funcionamento dos eventos e cliques do aplicativo"""
+""" Aqui é colocado toda a lógica de funcionamento dos eventos e valores do aplicativo"""
+
 while True:
     evento, valor = janela.read()
     sair = (evento == Sg.WIN_CLOSE_ATTEMPTED_EVENT or evento == 'Sair') and Sg.popup_yes_no('Deseja sair?')
