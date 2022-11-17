@@ -6,7 +6,7 @@ import login as lg
 
 # ------ AUTENTICAÇÃO USER\SENHA ------ #
 
-autenticar = [lg.login()]
+# autenticar = [lg.login()]
 
 # ------ BARRA DE MENU ------ #
 
@@ -37,12 +37,8 @@ janela = Sg.Window("Projetos de Encadernação V1.0", layout, enable_close_attem
 while True:
     evento, valor = janela.read()
     sair = (evento == Sg.WIN_CLOSE_ATTEMPTED_EVENT or evento == 'Sair') and Sg.popup_yes_no('Deseja sair?')
-    sair2 = (evento == Sg.Button('Sair'))
 
-    if evento == Sg.WIN_CLOSED:
-        break
-
-    if sair or sair2 == 'Yes':
+    if sair == 'Yes':
         break
 
     if evento == 'Novo' or evento == Sg.Button('Novo'):

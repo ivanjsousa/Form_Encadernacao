@@ -24,7 +24,7 @@ def login():
             break
         elif evento == 'Login':
             usuario_correto = 'teste'
-            senha_correta = '123456'
+            senha_correta = '123'
             user = valor['inpt_user']
             senha = valor['inpt_senha']
             if user == usuario_correto and senha == senha_correta:
