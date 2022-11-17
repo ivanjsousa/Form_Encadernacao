@@ -28,7 +28,7 @@ def login():
             user = valor['inpt_user']
             senha = valor['inpt_senha']
             if user == usuario_correto and senha == senha_correta:
-                Sg.popup_ok('Login efetuado com sucesso!', no_titlebar=True)
+                Sg.popup_ok('Login Autenticado com sucesso!', no_titlebar=True)
                 janela.close()
             else:
                 Sg.popup_cancel('Login ou Senha Incorreto', no_titlebar=True)
