@@ -19,7 +19,7 @@ tab5_layout = [[Sg.T('Descreva o Papel do Miolo?')],
                [Sg.In(key='miolo', do_not_clear=False, size=(55, 5))]]
 
 tab6_layout = [[Sg.T('Serão quantas páginas?')],
-               [Sg.In(key='caderno', do_not_clear=False, size=(55, 5))]]
+               [Sg.In(key='paginas', do_not_clear=False, size=(55, 5))]]
 
 abas = [Sg.TabGroup([[Sg.Tab('Quantidade', tab1_layout),
                       Sg.Tab('Formato', tab2_layout),
