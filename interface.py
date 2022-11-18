@@ -62,7 +62,7 @@ if lg.status is True:
                     print(f'Papelão da Capa de: {capa}.')
             print(f'O projeto terá {valor[ab.quantidade]} unidades(s) no formato {valor[ab.formato]}, revestimento '
                   f'em {valor[ab.revestimeno]} e papel {valor[ab.guarda]} para a guarda, o'
-                  f' miolo com papel {valor[ab.miolo]} e serão {valor[ab.paginas]} páginas.')
+                  f' miolo com papel {valor[ab.miolo]} e terá {valor[ab.paginas]} páginas.')
 
     # ------ FECHAR A JANELA ------- #
 
