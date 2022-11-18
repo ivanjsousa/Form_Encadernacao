@@ -22,7 +22,6 @@ layout = [
     [fm.papelao_capa],
     [ab.abas],
     [Sg.Output(size=(55, 5))],
-
     [Sg.Button('Novo'), Sg.SaveAs('Salvar'), Sg.Button('Imprimir'), Sg.Button('Sair')]
 ]
 
