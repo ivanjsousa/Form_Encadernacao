@@ -6,7 +6,7 @@ import login as lg
 
 # ------ AUTENTICAÇÃO USER\SENHA ------ #
 
-# autenticar = [lg.login()]
+autenticar = [lg.login()]
 
 # ------ BARRA DE MENU ------ #
 
