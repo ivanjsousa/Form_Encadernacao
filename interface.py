@@ -1,8 +1,9 @@
 import PySimpleGUI as Sg
 import frames as fm
-import input_users as iu
+import eventos as iu
 import abas as ab
 import login as lg
+
 
 # ------ BARRA DE MENU ------ #
 
@@ -21,17 +22,16 @@ layout = [
     [Sg.Button('Novo'), Sg.SaveAs('Salvar'), Sg.Button('Imprimir'), Sg.Button('Sair')]
 ]
 
+# ------ CHAMA A JANELA DO PROGRAMA ------- #
+janela = Sg.Window("Projetos de Encadernação V1.0", layout, enable_close_attempted_event=True)
+
+# ------ LAÇO QUE MANTEM A JANELA ATIVA ------ #
+""" Aqui é colocado toda a lógica de funcionamento dos eventos e valores do aplicativo"""
 
 # ------ AUTENTICAÇÃO USER\SENHA ------ #
 
 autenticar = [lg.login()]
 if lg.status is True:
-
-    # ------ CHAMA A JANELA DO PROGRAMA ------- #
-    janela = Sg.Window("Projetos de Encadernação V1.0", layout, enable_close_attempted_event=True)
-
-    # ------ LAÇO QUE MANTEM A JANELA ATIVA ------ #
-    """ Aqui é colocado toda a lógica de funcionamento dos eventos e valores do aplicativo"""
 
     while True:
         evento, valor = janela.read()
