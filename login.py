@@ -9,7 +9,7 @@ def login():
         [Sg.InputText(key='inpt_user')],
         [Sg.Text('Senha', key='senha')],
         [Sg.InputText(key='inpt_senha', password_char='*')],
-        [Sg.Button('Login')],
+        [Sg.Button('Login'), Sg.Button('Sair')],
         ]
 
     # ------ CHAMAR JANELA ------ #
@@ -21,6 +21,8 @@ def login():
     while True:
         evento, valor = janela.read()
         if evento == Sg.WIN_CLOSED:
+            break
+        elif evento == 'Sair':
             break
         elif evento == 'Login':
             usuario_correto = 'teste'

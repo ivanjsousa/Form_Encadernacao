@@ -1,6 +1,6 @@
 import PySimpleGUI as Sg
 import frames as fm
-import eventos as iu
+import eventos as ev
 import abas as ab
 import login as lg
 
@@ -14,7 +14,7 @@ menu_def = [['&Arquivo', ['&Novo', '---', '&Salvar', '&Imprimir', 'Sai&r']],
 
 layout = [
     [Sg.Menu(menu_def)],
-    [iu.entradas_user],
+    [ev.entradas_user],
     [fm.caract_projeto],
     [fm.papelao_capa],
     [ab.abas],
