@@ -25,8 +25,6 @@ layout = [
 # ------ CHAMA A JANELA DO PROGRAMA ------- #
 janela = Sg.Window("Projetos de Encadernação V1.0", layout, enable_close_attempted_event=True)
 
-# ------ LAÇO QUE MANTEM A JANELA ATIVA ------ #
-""" Aqui é colocado toda a lógica de funcionamento dos eventos e valores do aplicativo"""
 
 # ------ AUTENTICAÇÃO USER\SENHA ------ #
 
