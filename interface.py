@@ -46,18 +46,30 @@ if lg.status is True:
             print(f'Cliente: ', valor['cliente'])
             print(f'Telefone: ', valor['tel'])
             print(f'E-mail: ', valor['email'])
-            for tipo in fm.Lista_Tipo:
-                if valor[tipo] is True:
-                    print(f'Tipo: {tipo}.')
-            for item in fm.Lista_Acabamento:
-                if valor[item] is True:
-                    print(f'Com: {item}.')
-            for forma in fm.Lista_Impressao:
-                if valor[forma] is True:
-                    print(f'Impressão: {forma}.')
-            for capa in fm.Lista_Papelao:
-                if valor[capa] is True:
-                    print(f'Papelão da Capa de: {capa}.')
+            tipos = filter(lambda x: valor[x] is True, fm.Lista_Tipo)
+            print(f'Tipo: {", ".join(tipos)}.')
+
+            acabamentos = filter(lambda x: valor[x] is True, fm.Lista_Acabamento)
+            print(f'Com: {", ".join(acabamentos)}.')
+
+            impressoes = filter(lambda x: valor[x] is True, fm.Lista_Impressao)
+            print(f'Impressão: {", ".join(impressoes)}.')
+
+            capas = filter(lambda x: valor[x] is True, fm.Lista_Papelao)
+            print(f'Papelão da Capa de: {", ".join(capas)}.')
+
+            tipos = [x for x in fm.Lista_Tipo if valor[x] is True]
+            print(f'Tipo: {", ".join(tipos)}.')
+
+            acabamentos = [x for x in fm.Lista_Acabamento if valor[x] is True]
+            print(f'Com: {", ".join(acabamentos)}.')
+
+            impressoes = [x for x in fm.Lista_Impressao if valor[x] is True]
+            print(f'Impressão: {", ".join(impressoes)}.')
+
+            capas = [x for x in fm.Lista_Papelao if valor[x] is True]
+            print(f'Papelão da Capa de: {", ".join(capas)}.')
+
             print(f'O projeto terá {valor[ab.quantidade]} unidades(s) no formato {valor[ab.formato]}, revestimento '
                   f'em {valor[ab.revestimeno]} e papel {valor[ab.guarda]} para a guarda, o'
                   f' miolo com papel {valor[ab.miolo]} e terá {valor[ab.paginas]} páginas.')
