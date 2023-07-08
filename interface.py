@@ -5,6 +5,7 @@ import abas as ab
 import login as lg
 
 
+
 # ------ BARRA DE MENU ------ #
 
 menu_def = [['&Arquivo', ['&Novo', '---', '&Salvar', '&Imprimir', 'Sai&r']],
