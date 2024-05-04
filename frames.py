@@ -1,6 +1,6 @@
 import PySimpleGUI as Sg
 
-# ------ LAYOUT DOS FRAMES ------ #
+#LAYOUT DOS FRAMES#
 
 frame_tipo = [
     [Sg.CB('Encadernação', key='Encadernação')],
@@ -60,7 +60,7 @@ key_22 = '2,5mm'
 key_23 = '2,8mm'
 Lista_Papelao = [key_16, key_17, key_18, key_19, key_20, key_21, key_22, key_23]
 
-caract_projeto = [Sg.Frame('Tipo de Projeto', frame_tipo, key='t_projeto'),
+caract_projeto = [Sg.Frame('Tipo de Projeto  ', frame_tipo, key='t_projeto'),
                   Sg.Frame('Acabamento', frame_acabamento, key='t_acabamento'),
                   Sg.Frame('Tipo de Impressão', frame_impressao, key='t_impressao')],
 

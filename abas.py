@@ -1,7 +1,7 @@
 import PySimpleGUI as Sg
 
 
-# ------ LAYOUT DAS ABAS - (TIPO PASTAS) ------ #
+#LAYOUT DAS ABAS - (TIPO PASTAS)#
 
 tab1_layout = [[Sg.T('Quantas cópias do produto?')],
                [Sg.In(key='quantidade', do_not_clear=False, size=(55, 5))]]
@@ -30,7 +30,7 @@ abas = [Sg.TabGroup([[Sg.Tab('Quantidade', tab1_layout),
 
 quantidade = 'quantidade'
 formato = 'formato'
-revestimeno = 'revest'
+revestimento = 'revest'
 guarda = 'guarda'
 miolo = 'miolo'
 paginas = 'paginas'
